@@ -1,0 +1,145 @@
+/*
+## Colors
+
+### Primary
+
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)
+
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700
+
+*/
+
+body{
+    margin: 0;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit";
+    background: hsl(30, 54%, 90%);
+}
+
+section{
+    background: white;
+}
+
+img{
+    width: 100%;
+}
+
+.everything{
+    padding: 0 2em;
+}
+
+li{
+    margin-bottom: 0.5em;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
+    font-family: "Young Serif"
+}
+
+h2{
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+.prepare{
+    background: hsl(330, 100%, 98%);
+    padding: 0.5em 2em;
+}
+
+.prepare span, .instruction span{
+    font-weight: 700;
+}
+
+.h2Ingr, .h2Inst{
+   color: hsl(14, 45%, 36%);
+   font-size: 2rem;
+   font-weight: 400;
+   font-family: "Young Serif"
+}
+  
+.ingred li, .instruction li{
+    padding-left: 1.5em;
+}
+
+.instruction li{
+    margin-bottom: 1em;
+}
+
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
+}
+
+hr{
+    margin-top: 2em;
+}
+
+.bolded{
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
+}
+
+table{
+    padding: 1em 1em 1.5em 1em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 1em;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+
+.last{
+    border-bottom: none;
+    padding-bottom: 2.5em;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media (min-width: 500px){
+    section{
+        margin: 5vw auto;
+        max-width: 750px;
+        padding: 0 2em;
+        border-radius: 2em;
+    }
+    img{
+        border-radius: 2em;
+        margin-top: 2em;
+    }  
+}
+
+@media (max-width: 375px){
+    section{
+        min-width: 375px;
+    }
+    .attribution{
+        min-width: 375px;
+    }
+}
